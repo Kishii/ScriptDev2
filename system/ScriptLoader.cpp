@@ -7,7 +7,14 @@
 //battlegrounds
 extern void AddSC_battleground();
 
-//custom
+//GMISLAND
+extern void  AddSC_custom_npc_professionmaster();
+extern void  AddSC_custom_npc_spellmaster();
+extern void  AddSC_custom_npc_resetlevel_19();
+extern void  AddSC_custom_npc_resetlevel_60();
+extern void  AddSC_custom_npc_resetlevel_70();
+extern void  AddSC_custom_npc_resetlevel_80();
+extern void  AddSC_custom_npc_renamecharacter();
 
 //examples
 extern void AddSC_example_creature();
@@ -418,7 +425,14 @@ void AddScripts()
     //battlegrounds
     AddSC_battleground();
 
-    //custom
+    //GMISLAND
+	AddSC_custom_npc_professionmaster();
+	AddSC_custom_npc_spellmaster();
+	AddSC_custom_npc_resetlevel_19();
+	AddSC_custom_npc_resetlevel_60();
+	AddSC_custom_npc_resetlevel_70();
+	AddSC_custom_npc_resetlevel_80();
+	AddSC_custom_npc_renamecharacter();
 
     //examples
     AddSC_example_creature();

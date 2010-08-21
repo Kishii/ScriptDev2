@@ -48,6 +48,13 @@ include/sc_grid_searchers.h \
 include/sc_instance.cpp \
 include/sc_instance.h \
 scripts/battlegrounds/battleground.cpp \
+scripts/GMISLAND/custom_npc_professionmaster.cpp \
+scripts/GMISLAND/custom_npc_spellmaster.cpp \
+scripts/GMISLAND/custom_npc_resetlevel_19.cpp \
+scripts/GMISLAND/custom_npc_resetlevel_60.cpp \
+scripts/GMISLAND/custom_npc_resetlevel_70.cpp \
+scripts/GMISLAND/custom_npc_resetlevel_80.cpp \
+scripts/GMISLAND/custom_npc_renamecharacter.cpp \
 scripts/eastern_kingdoms/alterac_mountains.cpp \
 scripts/eastern_kingdoms/arathi_highlands.cpp \
 scripts/eastern_kingdoms/blasted_lands.cpp \
