@@ -197,7 +197,7 @@ bool GOHello_go_ethereum_stasis(Player* pPlayer, GameObject* pGo)
 
 bool GOHello_go_field_repair_bot_74A(Player* pPlayer, GameObject* pGo)
 {
-    if (pPlayer->HasSkill(SKILL_ENGINERING) && pPlayer->GetBaseSkillValue(SKILL_ENGINERING) >= 300 && !pPlayer->HasSpell(22704))
+    if (pPlayer->HasSkill(202) && pPlayer->GetBaseSkillValue(202) >= 300 && !pPlayer->HasSpell(22704))
     {
         pPlayer->CastSpell(pPlayer,22864,false);
     }
