@@ -21,7 +21,11 @@ SDComment:
 SDCategory: Onyxia's Lair
 EndScriptData */
 
+<<<<<<< HEAD
 #include "ScriptIncludes.h"
+=======
+#include "precompiled.h"
+>>>>>>> be924cdd55e26a3deda5380f81ab7ca3cc2c92e8
 #include "onyxias_lair.h"
 
 instance_onyxias_lair::instance_onyxias_lair(Map* pMap) : ScriptedInstance(pMap),
@@ -32,7 +36,10 @@ instance_onyxias_lair::instance_onyxias_lair(Map* pMap) : ScriptedInstance(pMap)
 
 void instance_onyxias_lair::Initialize()
 {
+<<<<<<< HEAD
     m_uiOnyxiaState = NOT_STARTED;
+=======
+>>>>>>> be924cdd55e26a3deda5380f81ab7ca3cc2c92e8
 }
 
 void instance_onyxias_lair::OnCreatureCreate(Creature* pCreature)
@@ -45,6 +52,7 @@ void instance_onyxias_lair::OnCreatureCreate(Creature* pCreature)
     }
 }
 
+<<<<<<< HEAD
 uint32 instance_onyxias_lair::GetData(uint32 uiType)
 {
     switch(uiType)
@@ -99,6 +107,8 @@ void instance_onyxias_lair::Load(const char* chrIn)
     OUT_LOAD_INST_DATA_COMPLETE;
 }
 
+=======
+>>>>>>> be924cdd55e26a3deda5380f81ab7ca3cc2c92e8
 InstanceData* GetInstanceData_instance_onyxias_lair(Map* pMap)
 {
     return new instance_onyxias_lair(pMap);

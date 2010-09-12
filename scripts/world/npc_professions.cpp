@@ -846,14 +846,13 @@ bool GossipHello_npc_engineering_tele_trinket(Player* pPlayer, Creature* pCreatu
     uint32 uiNpcTextId = 0;
     std::string strGossipItem;
     bool bCanLearn = false;
-
-    if (pPlayer->HasSkill(202))
+    if (pPlayer->HasSkill(SKILL_ENGINEERING))
     {
         switch(pCreature->GetEntry())
         {
             case NPC_ZAP:
                 uiNpcTextId = 7249;
-                if (pPlayer->GetBaseSkillValue(202) >= 260 && pPlayer->HasSpell(S_GOBLIN))
+                if (pPlayer->GetBaseSkillValue(SKILL_ENGINEERING) >= 260 && pPlayer->HasSpell(S_GOBLIN))
                 {
                     if (!pPlayer->HasSpell(SPELL_TO_EVERLOOK))
                     {
@@ -866,7 +865,7 @@ bool GossipHello_npc_engineering_tele_trinket(Player* pPlayer, Creature* pCreatu
                 break;
             case NPC_JHORDY:
                 uiNpcTextId = 7251;
-                if (pPlayer->GetBaseSkillValue(202) >= 260 && pPlayer->HasSpell(S_GNOMISH))
+                if (pPlayer->GetBaseSkillValue(SKILL_ENGINEERING) >= 260 && pPlayer->HasSpell(S_GNOMISH))
                 {
                     if (!pPlayer->HasSpell(SPELL_TO_GADGET))
                     {
@@ -879,7 +878,7 @@ bool GossipHello_npc_engineering_tele_trinket(Player* pPlayer, Creature* pCreatu
                 break;
             case NPC_KABLAM:
                 uiNpcTextId = 10365;
-                if (pPlayer->GetBaseSkillValue(202) >= 350 && pPlayer->HasSpell(S_GOBLIN))
+                if (pPlayer->GetBaseSkillValue(SKILL_ENGINEERING) >= 350 && pPlayer->HasSpell(S_GOBLIN))
                 {
                     if (!pPlayer->HasSpell(SPELL_TO_AREA52))
                     {
@@ -892,7 +891,7 @@ bool GossipHello_npc_engineering_tele_trinket(Player* pPlayer, Creature* pCreatu
                 break;
             case NPC_SMILES:
                 uiNpcTextId = 10363;
-                if (pPlayer->GetBaseSkillValue(202) >= 350 && pPlayer->HasSpell(S_GNOMISH))
+                if (pPlayer->GetBaseSkillValue(SKILL_ENGINEERING) >= 350 && pPlayer->HasSpell(S_GNOMISH))
                 {
                     if (!pPlayer->HasSpell(SPELL_TO_TOSHLEY))
                     {

@@ -765,6 +765,7 @@ void npc_doctorAI::UpdateAI(const uint32 diff)
                 Patient->SetFlag(UNIT_FIELD_FLAGS, UNIT_FLAG_PVP_ATTACKABLE);
 
                 Patients.push_back(Patient->GetGUID());
+
                 npc_injured_patientAI* pPatientAI = dynamic_cast<npc_injured_patientAI*>(Patient->AI());
 
                 if (pPatientAI)
@@ -2189,7 +2190,7 @@ void AddSC_npcs_special()
     newscript->pGossipHello =  &GossipHello_npc_locksmith;
     newscript->pGossipSelect = &GossipSelect_npc_locksmith;
     newscript->RegisterSelf();
-	
+
     newscript = new Script;
     newscript->Name = "mob_death_knight_gargoyle";
     newscript->GetAI = &GetAI_mob_death_knight_gargoyle;

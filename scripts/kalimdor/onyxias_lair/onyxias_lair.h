@@ -7,12 +7,10 @@
 
 enum
 {
-    TYPE_ONYXIA                 = 0,
-
     NPC_ONYXIA_TRIGGER          = 12758
 };
 
-class instance_onyxias_lair : public ScriptedInstance
+class MANGOS_DLL_DECL instance_onyxias_lair : public ScriptedInstance
 {
     public:
         instance_onyxias_lair(Map* pMap);
@@ -22,18 +20,10 @@ class instance_onyxias_lair : public ScriptedInstance
 
         void OnCreatureCreate(Creature* pCreature);
 
-        uint64 GetOnyxiaTriggerGUID() const { return m_uiOnyxTriggerGUID; }
-        bool IsEncounterInProgress() const { return m_uiOnyxiaState == IN_PROGRESS; }
+        uint64 GetOnyxiaTriggerGUID() { return m_uiOnyxTriggerGUID; }
 
-        const char* Save() { return m_strInstData.c_str(); }
-        void Load(const char* chrIn);
-
-        uint32 GetData(uint32 uiType);
-        void SetData(uint32 uiType, uint32 uiData);
     protected:
         uint64 m_uiOnyxTriggerGUID;
-        uint32 m_uiOnyxiaState;
-        std::string m_strInstData;
 };
 
 #endif
