@@ -127,17 +127,10 @@ struct MANGOS_DLL_DECL ScriptedAI : public CreatureAI
     void DoStopAttack();
 
     //Cast spell by Id
-<<<<<<< HEAD
-    void DoCast(Unit* pVictim, uint32 uiSpellId, bool bTriggered = false);
-
-    //Cast spell by spell info
-    void DoCastSpell(Unit* pwho, SpellEntry const* pSpellInfo, bool bTriggered = false);
-=======
     void DoCast(Unit* pTarget, uint32 uiSpellId, bool bTriggered = false);
 
     //Cast spell by spell info
     void DoCastSpell(Unit* pTarget, SpellEntry const* pSpellInfo, bool bTriggered = false);
->>>>>>> be924cdd55e26a3deda5380f81ab7ca3cc2c92e8
 
     //Plays a sound to all nearby players
     void DoPlaySoundToSet(WorldObject* pSource, uint32 uiSoundId);
